@@ -1,22 +1,20 @@
-.footer {
-  &__address-link {
-    color: var(--grey-heading);
-    text-decoration: none;
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    cursor: pointer;
-  }
+.footer__address-link {
+  color: var(--grey-heading);
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
 
-  &__join-us {
-    display: flex;
-    flex-direction: column;
-    padding-top: 12px;
+&__join-us {
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px;
 
-    &__header {
-      margin-bottom: 20px;
-    }
+  &__header {
+    margin-bottom: 20px;
   }
 }
