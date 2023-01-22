@@ -1,33 +1,17 @@
-.portfolio-tiles__header {
+.portfoliotiles__header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
   margin-top: 0;
-}
-li {
-  list-style-type: none;
-}
-button {
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  border: 0;
-  font-style: normal;
-  font-family: roboto;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0.03em;
-  padding: 6px 22px;
-  &:hover,
-  &:focus {
+
+  & :hover,
+  & :focus {
     color: #fff;
     background-color: var(--blue);
     cursor: pointer;
   }
-}
-
 &__container {
   display: flex;
   gap: 30px;
@@ -89,6 +73,7 @@ button {
   font-size: 16px;
   line-height: 2;
   letter-spacing: 0.03em;
+}
   &__title {
     color: var(--black-text);
     font-weight: bold;
@@ -99,4 +84,20 @@ button {
     color: var(--grey-heading);
     font-weight: 400;
   }
+li {
+  list-style-type: none;
+}
+button {
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  border: 0;
+  font-style: normal;
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  padding: 6px 22px;
+}
+
 }

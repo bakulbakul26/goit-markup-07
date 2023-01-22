@@ -1,16 +1,19 @@
 @import './utils/mixins.scss';
 @import './components/activity.scss';
-@import './components/team-tile';
-@import './components/social-icon';
-@import './components/contact-modal';
-@import './components/navigation-img';
-@import './components/loremipsum';
+
+@import './components/social-icon.scss';
+@import './components/contact-modal.scss';
+@import './components/navigation-img.scss';
+@import './components/loremipsum.scss';
 @import './components/client.scss';
-@import './components/newsletter';
-@import './components/logo';
-@import './components/navbar';
-@import './components/footer';
-@import './components/portfolio-tiles';
+@import './components/newsletter.scss';
+@import './components/logo.scss';
+@import './components/navbar.scss';
+@import './components/footer.scss';
+@import './components/portfoliotiles.scss';
+@import './components/team-tile.scss';
+
+
 
 :focus-visible {
   outline: 1px auto var(--blue);
@@ -141,7 +144,10 @@ footer {
 }
 
 .article {
-  @include flex-gap(30px);
+ 
+    display: flex;
+  gap: 30px;
+  cursor: pointer;
 }
 
 .header {
