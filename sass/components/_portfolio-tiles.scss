@@ -1,100 +1,29 @@
-.portfolio-tiles__header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 50px;
-  margin-top: 0;
-  list-style-type: none;
-}
-.hoverable {
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  border: 0;
-  font-style: normal;
 
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0.03em;
-  padding: 6px 22px;
-  &:hover,
-  &:focus {
-    color: #fff;
-    background-color: var(--blue);
-    cursor: pointer;
-  }
-}
-
-.portfolio-tiles__container {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.portfolio-titles__tile {
-  display: flex;
-  flex-direction: column;
-
-  &:hover {
-    box-shadow: 0px 4px 4px 0px #00000040;
-    cursor: pointer;
-  }
-}
-.portfolio-titles__header {
-  position: relative;
-  overflow: hidden;
-  width: 370px;
-  height: 294px;
-
-&:hover,
-&:focus {
-  .portfolio-tiles__tile__header__overlay {
-    transform: translateX(0);
-  }
-}
-}
-&__overlay {
-  position: absolute;
-  background-color: rgba(33, 150, 243, 0.9);
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateY(101%);
-  transition-duration: 250ms;
-  transition-timing-function: ease;
-  > p {
-    color: #ffffff;
-
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    margin-left: 24px;
-    margin-right: 24px;
-  }
-}
-
-&__footer {
+.portfolio-tiles__footer {
   border: #ececec solid 1px;
   border-top: 0px;
   padding: 20px 24px;
-
   font-size: 16px;
   line-height: 2;
   letter-spacing: 0.03em;
-  &__title {
+
+  .portfolio-tiles__title {
     color: var(--black-text);
-    font-weight: bold;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    text-align: left;
   }
 
-  &__subtitle {
+  .portfolio-tiles__subtitle {
     color: var(--grey-heading);
+    font-family: Roboto;
+    font-size: 16px;
     font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    text-align: left;
   }
 }
