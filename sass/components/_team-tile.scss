@@ -10,15 +10,15 @@
   justify-content: center;
   padding: 30px 0;
 }
-  .team-tile__name {
+  &__name {
     font-family: Roboto;
     color: var(--black-text);
     font-weight: bold;
     font-size: 16px;
     line-height: 2;
     letter-spacing: 0.03em;
-  
-  .team-tile__job {
+  }
+  &__job {
     font-family: roboto;
     color: var(--grey-heading);
     font-weight: 400;
@@ -27,4 +27,3 @@
     letter-spacing: 0.03em;
   }
   }
-}

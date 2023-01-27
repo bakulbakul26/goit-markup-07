@@ -3,15 +3,16 @@
   background-color: var(--grey-light);
   display: flex;
   justify-content: center;
-}
-.lorem__title {
-  color: #212121;
-  font-family: roboto;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16.41px;
-  letter-spacing: 0.03em;
-  font-family: roboto;
+
+  &__title {
+    color: #212121;
+    font-family: roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.41px;
+    letter-spacing: 0.03em;
+    font-family: roboto;
+  }
 }
 .lorem__text {
   color: #757575;
