@@ -1,3 +1,5 @@
+
+
 .social__icon {
   height: 44px;
   width: 44px;
@@ -6,10 +8,14 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  
+  
 
   &.in-footer {
     background-color: rgba(255, 255, 255, 0.1);
     --color4: var(--white);
+    
+    
   }
 
   &:hover,

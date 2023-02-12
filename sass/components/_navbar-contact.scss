@@ -1,11 +1,22 @@
+
+
 .navbar__contact {
+  padding: 10px;
   display: flex;
-  
+  @media screen and (max-width: 1200px) {
+    
+    flex-direction: column;
+   gap:10px
+  }
+   @media screen and (max-width: 768px) {
+   display:  none;
+  }
+
 }
 .navbar__button {
-  margin-right: 30px;
+  padding-right: 30px;
   display: flex;
-  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: var(--grey-heading);
   font-family: roboto;
