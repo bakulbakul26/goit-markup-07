@@ -8,11 +8,21 @@
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 0.03em;
-  text-align: left;
+  text-align:left;
   padding-bottom: 20px;
-}
+  
+@media screen and (max-width: 1200px) {
+    justify-content: center;
+    align-items: center;
+  }
 .newslettera__form {
   display: flex;
+  @media screen and (max-width: 1200px) {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 }
 
 .input__email {
@@ -25,6 +35,10 @@
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding-left: 16px;
+   @media screen and (max-width: 1200px) {
+      width: 450px;
+      max-width: 85vw;
+    }
 }
 .submit__email {
   background-color: #2196f3;
@@ -45,4 +59,7 @@
   justify-content: center;
   cursor: pointer;
   margin-left: 12px;
+
+}
+
 }

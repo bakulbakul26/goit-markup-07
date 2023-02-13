@@ -54,11 +54,52 @@
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               <a class="navbar__button">+48 111 111 111</a>
+           </div>
+        </div>
+        <div class="js-menu-container">
+          <button class="mobile-menu__open js-open-menu">
+          <svg class="icon-menu_40px" width="40" height="40">
+                <use href="./images/ham.svg#icon-menu_40px"></use>
+              </svg>
+         </button>
+        <div class="mobile-menu">
+          
+            <button class="mobile-menu__close js-close-menu">
+              <svg class="icon-close" width="40" height="40">
+                <use href="./images/dd.svg#icon-close"></use>
+              </svg>
+            </button>
+              <div>
+                <div class="mobile-menu__button">
+                  <a class="mobile-menu__button__link  " href="index.html">Agencja</a>
+                </div>
+                <div class="mobile-menu__button ">
+                  <a class="mobile-menu__button__link black " href="portfolio.html"
+                    >Portfolio</a
+                  >
+                </div>
+                <div class="mobile-menu__button ">
+                  <a class="mobile-menu__button__link black " href="#">Kontakt</a>
+                </div>
+              </div>
+            
+            <div class="mobile-menu__bottom">
+              <a class="mobile-menu__bottom__phone ">+48 111 111 111</a>
+              <a class="mobile-menu__button__link email " href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+              <div class="mobile-menu__bottom__socials">
+                <a class="social-link">Instagram</a>
+                <a class="social-link">Twitter</a>
+                <a class="social-link">Facebook</a>
+                <a class="social-link">LinkedIn</a>
+              </div>
             </div>
           </div>
         </div>
       </nav>
     </header>
+
 
     <main>
       <section class="navigation__image">
@@ -67,14 +108,14 @@
           DLA WASZEGO BIZNESU
         </h1>
 
-        <button class="navigation__button button-open hoverable" type="button" data-modal-open>
+        <button class="navigation__button button-open" type="button" data-modal-open>
           Zamów usługe
         </button>
       </section>
 
       <section class="section">
-        <div class="article container">
-          <div>
+        <div class="article container wrap">
+          <div class="lorem__container">
             <div class="lorem__icon">
               <svg class="icon-antenna-1" width="70" height="70">
                 <use href="./images/icons.svg#icon-antenna-1"></use>
@@ -87,7 +128,7 @@
             </p>
           </div>
 
-          <div>
+          <div class="lorem__container">
             <div class="lorem__icon">
               <svg class="icon-clock-1" width="70" height="70">
                 <use href="./images/icons.svg#icon-clock-1"></use>
@@ -100,7 +141,7 @@
             </p>
           </div>
 
-          <div>
+          <div class="lorem__container">
             <div class="lorem__icon">
               <svg class="icon-diagram-1" width="70" height="70">
                 <use href="./images/icons.svg#icon-diagram-1"></use>
@@ -114,7 +155,7 @@
             </p>
           </div>
 
-          <div>
+          <div class="lorem__container">
             <div class="lorem__icon">
               <svg class="icon-astronaut-1" width="70" height="70">
                 <use href="./images/icons.svg#icon-astronaut-1"></use>
@@ -173,12 +214,35 @@
       <section class="section foto2">
         <div class="container">
           <h2 class="section-header">Nasz zespół</h2>
-          <div class="foto2-flex-4">
+          <div class="foto2-flex-4 wrap">
             <article class="team-tile">
-              <img alt="person on 1" src="./images/img.jpg" width="270" height="260" />
+              
+                <picture>
+                  
+              <source
+                media="(max-width: 767px)"
+                srcset="./images/1mobilex1.jpg 450w, ./images/1mobilex2.jpg 900w"
+                sizes="(min-width: 480px) 450px"
+              />
+              <source
+                media="(max-width: 1199px)"
+                srcset="./images/1tabletx1.jpg, ./images/1tabletx2.jpg 708w"
+                sizes="(max-width: 1199px) 354px"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="./images/1deskopx1.jpg 270w, ./images/1deskopx2.jpg 540w"
+                sizes="(min-width: 1200px) 270px"
+              />
+             <img
+                alt="person on 1"
+                src="./images/1img.jpg"
+                width="270"
+                height="260"/>
+            </picture>
               <div class="team-tile__footer">
                 <div class="team-tile__name">John Doe</div>
-                <div class="team-tile__job">Poroduc Designer</div>
+                <div class="team-tile__job">Product Designer</div>
                 <div class="social-container">
                   <a href="#" class="social__icon">
                     <svg class="icon-instagram-2" width="20" height="20">
@@ -204,10 +268,28 @@
               </div>
             </article>
             <article class="team-tile">
-              <img alt="person on 2" src="./images/img(11).jpg" width="270" height="260" />
+              <picture>
+              
+               <source
+                media="(max-width: 767px)"
+                srcset="./images/2mobilex1.jpg 450w, ./images/2mobilex2.jpg 900w"
+                sizes="(min-width: 480px) 450px"
+              />
+              <source
+                media="(max-width: 1199px)"
+                srcset="./images/2tabletx1.jpg, ./images/2tabletx2.jpg 708w"
+                sizes="(max-width: 1199px) 354px"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="./images/2deskopx1.jpg 270w, ./images/2deskopx2.jpg 540w"
+                sizes="(min-width: 1200px) 270px"
+              />
+             <img alt="person on 2" src="./images/2img.jpg" width="270" height="260"/>
+            </picture>
               <div class="team-tile__footer">
                 <div class="team-tile__name">John Doe</div>
-                <div class="team-tile__job">Developer</div>
+                <div class="team-tile__job">Frontend Developer</div>
                 <div class="social-container">
                   <a href="#" class="social__icon">
                     <svg class="icon-instagram-2" width="20" height="20">
@@ -234,7 +316,25 @@
             </article>
 
             <article class="team-tile">
-              <img alt="person on.3" src="./images/img(2).jpg" width="270" height="260" />
+              <picture>
+              
+               <source
+                media="(max-width: 767px)"
+                srcset="./images/3mobilex1.jpg 450w, ./images/3mobilex2.jpg 900w"
+                sizes="(min-width: 480px) 450px"
+              />
+              <source
+                media="(max-width: 1199px)"
+                srcset="./images/3tabletx1.jpg, ./images/3tabletx2.jpg 708w"
+                sizes="(max-width: 1199px) 354px"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="./images/3deskopx1.jpg 270w, ./images/3deskopx2.jpg 540w"
+                sizes="(min-width: 1200px) 270px"
+              />
+             <img alt="person on.3" src="./images/3img.jpg" width="270" height="260"/>
+            </picture>
               <div class="team-tile__footer">
                 <div class="team-tile__name">John Doe</div>
                 <div class="team-tile__job">Marketig</div>
@@ -263,7 +363,25 @@
               </div>
             </article>
             <article class="team-tile">
-              <img alt="person on.4" src="./images/img(3).jpg" width="270" height="260" />
+              <picture>
+              
+               <source
+                media="(max-width: 767px)"
+                srcset="./images/4mobilex1.jpg 450w, ./images/4mobilex2.jpg 900w"
+                sizes="(min-width: 480px) 450px"
+              />
+              <source
+                media="(max-width: 1199px)"
+                srcset="./images/4tabletx1.jpg, ./images/4tabletx2.jpg 708w"
+                sizes="(max-width: 1199px) 354px"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="./images/4deskopx1.jpg 270w, ./images/4deskopx2.jpg 540w"
+                sizes="(min-width: 1200px) 270px"
+              />
+             <img alt="person on.4" src="./images/4img.jpg" width="270" height="260"/>
+            </picture>
               <div class="team-tile__footer">
                 <div class="team-tile__name">John Doe</div>
                 <div class="team-tile__job">UI Designer</div>
@@ -298,7 +416,7 @@
       <section class="section">
         <div class="container">
           <h2 class="clients__title">Nasi Klienci</h2>
-          <div class="clients__list">
+          <div class="clients__list wrap">
             <a href="#" class="clients__icon">
               <svg class="icon-Logo-5" width="106" height="60">
                 <use href="./images/icons.svg#icon-Logo-5"></use>
@@ -334,7 +452,7 @@
       </section>
     </main>
     <footer>
-      <div class="container">
+      <div class="container wrap">
         <address class="font-style-normal">
           <div class="logo__container">
             <span class="logo__text--blue">Web</span><span class="logo__text--white">Studio</span>
@@ -432,5 +550,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
