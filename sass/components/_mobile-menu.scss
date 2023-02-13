@@ -22,10 +22,15 @@
         background-color:#fff;
         border:none;
         cursor: pointer;
+<<<<<<< HEAD
             :hover,
       :focus {
         color: var(--blue);
         cursor: pointer;
+=======
+       
+      }
+>>>>>>> e3badfcc30d24ee13f982e4057425b82a9c27116
       }
       
     }
@@ -48,6 +53,10 @@
 
       .js-open-menu {
         display: none;
+<<<<<<< HEAD
+=======
+     
+>>>>>>> e3badfcc30d24ee13f982e4057425b82a9c27116
       }
     }
   }
